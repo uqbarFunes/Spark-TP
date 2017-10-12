@@ -1,0 +1,14 @@
+{{#partial "contenido"}}
+	<h3>¡Bienvenido a Sistema de Inversiones!</h3>
+	<div class="form-group">
+	<form role="form" action="/login"
+	method="POST">
+		<form>
+  			Ingrese nombre de usuario y contraseña:<br>
+  			<input type="text" name="userName"><br>
+  			<input type="password" name="password">
+  			<button type="submit" class="btn btn-primary">Ingresar</button>
+		</form>
+	</div>
+{{/partial}}
+{{>base.hbs}}

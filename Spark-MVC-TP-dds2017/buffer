@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+#div1 {
+    width: 350px;
+    height: 70px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+}
+#mydiv {
+    position: absolute;
+    z-index: 9;
+    background-color: #f1f1f1;
+    text-align: center;
+    border: 1px solid #d3d3d3;
+}
+
+#mydivheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #2196F3;
+    color: #fff;
+}
+</style>
+<script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+    var someText = "cierto texto" ;
+    document.getElementById("p1").appendChild(someText);
+}
+</script>
+</head>
+<body>
+
+<p>Move the account EBITDA into the rectangle:</p>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+<p id="p1"></p>
+</div>
+<br>
+<div id="mydiv" src="img_logo.gif" draggable="true" ondragstart="drag(event)" width="336" height="69">
+	<div id="mydivheader">EBITDA</div>
+</div>
+
+</body>
+</html>

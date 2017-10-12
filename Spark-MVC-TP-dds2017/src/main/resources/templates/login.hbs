@@ -1,0 +1,26 @@
+{{#partial "contenido"}}
+	{{#if usuario}}
+		<h1>Bienvenido al sistema de selección de inversiones plausibles!</h1>
+		<form role="post" action="/empresas" method="POST">
+			<input type="hidden" name="userName" value={{usuario}}>
+			<button type="submit" class="btn btn-primary">Empresas</button>
+		</form>
+		<form role="post" action="/indicadores" method="POST">
+			<input type="hidden" name="userName" value={{usuario}}>
+			<button type="submit" class="btn btn-primary">Indicadores</button>
+		</form>
+		<form role="post" action="/metodologias" method="POST">
+			<input type="hidden" name="userName" value={{usuario}}>
+			<button type="submit" class="btn btn-primary">Metodologias</button>
+		</form>
+		<form role="get" action="/drag" method="GET" >
+			<button type="submit" class="btn btn-primary">Drag ejemplo</button>
+		</form>
+	{{else}}
+		<h1>Usuario y/o contraseña incorrecta</h1>
+		<form role="get" action="/" method="GET">
+			<button  type="submit" class="btn btn-primary">Volver a login</button>
+		</form>
+	{{/if}}
+{{/partial}}
+{{>base.hbs}}
