@@ -5,12 +5,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+import model.Login;
 import model.LoginModel;
 import spark.ModelAndView;
 import spark.Request;
 import spark.Response;
-
-import entities.Login;
 
 public class LoginController {
 	private Map <String, Object> model = new HashMap<>();

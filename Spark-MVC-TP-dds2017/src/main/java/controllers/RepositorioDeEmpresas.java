@@ -3,7 +3,7 @@ package controllers;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import entities.Empresa;
+import model.Empresa;
 
 public class RepositorioDeEmpresas {
 

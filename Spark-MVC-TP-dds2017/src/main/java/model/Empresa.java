@@ -1,4 +1,4 @@
-package entities;
+package model;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -38,7 +38,7 @@ public class Empresa implements Serializable {
 		this.cuentas = myCuentas ;
 	}
 
-	public String getName() {
+	public String getNombre() {
 		return name;
 	}
 

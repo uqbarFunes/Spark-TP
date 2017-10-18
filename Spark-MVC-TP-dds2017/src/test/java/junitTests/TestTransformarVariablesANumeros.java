@@ -2,18 +2,18 @@ package junitTests;
 
 import java.util.ArrayList;
 import java.util.List;
-import controllers.CuentasHandler;
+import controllers.CuentaController;
 import java.lang.StringBuilder;
 
 public class TestTransformarVariablesANumeros 
 {
 
-	private CuentasHandler cuentasHandler ;
+	private CuentaController cuentasHandler ;
 	List <String> cuentas ;
 	
 	public TestTransformarVariablesANumeros()
 	{
-		this.cuentasHandler = new CuentasHandler();
+		this.cuentasHandler = new CuentaController();
 		this.cuentas = new ArrayList<>();
 		this.transformarVariablesANumeros("EBITDA+ROE");
 	}

@@ -1,14 +1,21 @@
-package entities;
+package model;
 
 import java.io.Serializable;
-
-import entities.Cuenta;
 import java.util.List;
 
 public class Indicador implements Serializable {
 	private static final long serialVersionUID = 1L;
 	private String nombre ;
-	private String expresion ;
+	private String usuario ;
+	private String formula ;
+	public String getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(String usuario) {
+		this.usuario = usuario;
+	}
+
 	private List<Cuenta> cuentas ;
 	private List<Indicador> indicadores ;
 	
@@ -25,12 +32,12 @@ public class Indicador implements Serializable {
 		this.nombre = nombre;
 	}
 
-	public String getExpresion() {
-		return expresion;
+	public String getFormula() {
+		return formula;
 	}
 
-	public void setExpresion(String expresion) {
-		this.expresion = expresion;
+	public void setFormula(String expresion) {
+		this.formula = expresion;
 	}
 
 	public List<Cuenta> getCuentas() {

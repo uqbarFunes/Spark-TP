@@ -14,7 +14,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
-import entities.Empresa;
+import model.Empresa;
 
 public class DAOJsonEmpresa implements DAOEmpresa {
 	
@@ -50,7 +50,7 @@ public class DAOJsonEmpresa implements DAOEmpresa {
 			List<Empresa>empresas = getAllEmpresas();
 			List<Empresa> empresasMenosEmpresaAEliminar = 
 					empresas.stream()
-						.filter(e -> !empresa.getName().equals(e.getName()))
+						.filter(e -> !empresa.getNombre().equals(e.getNombre()))
 						.collect(Collectors.toList()) ;
 			this.empresasToJsonFile(empresasMenosEmpresaAEliminar);
 		} catch (IOException e1) {
@@ -101,7 +101,7 @@ public class DAOJsonEmpresa implements DAOEmpresa {
 		try {
 			empresas = this.getAllEmpresas();
 			List<String> nombresDeEmpresas = new ArrayList<>() ;
-			empresas.forEach(e -> nombresDeEmpresas.add(e.getName()));
+			empresas.forEach(e -> nombresDeEmpresas.add(e.getNombre()));
 			int index = nombresDeEmpresas.indexOf(nombreEmpresa) ;
 			return index ;
 		} catch (IOException e1) {
@@ -128,7 +128,7 @@ public class DAOJsonEmpresa implements DAOEmpresa {
 		 */
 		try {
 			ArrayList<Empresa> empresas = this.getAllEmpresas();
-			int index = this.find(empresa.getName()) ;
+			int index = this.find(empresa.getNombre()) ;
 			empresas.set(index, empresa) ;
 			
 			

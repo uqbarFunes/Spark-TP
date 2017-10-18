@@ -11,7 +11,7 @@ import org.junit.Test;
 import controllers.DAOJsonEmpresa;
 import controllers.FilePath;
 import controllers.RepositorioDeEmpresas;
-import entities.Empresa;
+import model.Empresa;
 
 public class TestCuentasHandler {
 	

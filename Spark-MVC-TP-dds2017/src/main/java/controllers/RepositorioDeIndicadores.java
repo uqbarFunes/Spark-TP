@@ -1,9 +1,9 @@
 package controllers;
 
-import entities.Indicador;
-
 import java.io.IOException;
 import java.util.ArrayList;
+
+import model.Indicador;
 
 public class RepositorioDeIndicadores {
 	

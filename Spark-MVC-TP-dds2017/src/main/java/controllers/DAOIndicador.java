@@ -3,7 +3,7 @@ package controllers;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import entities.Indicador;
+import model.Indicador;
 
 public interface DAOIndicador {
 	public void add (Indicador indicador) throws IOException ;

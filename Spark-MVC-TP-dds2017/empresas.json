@@ -7,29 +7,86 @@
         "periodos": [
           {
             "fechaInicial": {
-              "year": 2013,
+              "year": 2009,
               "month": 1,
               "day": 1
             },
             "fechaFinal": {
-              "year": 2013,
+              "year": 2009,
               "month": 6,
               "day": 30
             },
-            "cotizacion": 152140
+            "cotizacion": 23462
           },
           {
             "fechaInicial": {
-              "year": 2013,
+              "year": 2009,
               "month": 7,
               "day": 1
             },
             "fechaFinal": {
+              "year": 2009,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 303456
+          },
+          {
+            "fechaInicial": {
+              "year": 2010,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2010,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 666666
+          },
+          {
+            "fechaInicial": {
+              "year": 2011,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2011,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 333666
+          }
+        ]
+      },
+      {
+        "nombre": "FDS",
+        "periodos": [
+          {
+            "fechaInicial": {
+              "year": 2012,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2012,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 11133
+          },
+          {
+            "fechaInicial": {
+              "year": 2013,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
               "year": 2013,
               "month": 12,
               "day": 31
             },
-            "cotizacion": 944420
+            "cotizacion": 8000024
           },
           {
             "fechaInicial": {
@@ -42,7 +99,20 @@
               "month": 12,
               "day": 31
             },
-            "cotizacion": 14587
+            "cotizacion": 126798
+          },
+          {
+            "fechaInicial": {
+              "year": 2015,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2015,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 1658
           }
         ]
       },
@@ -51,29 +121,29 @@
         "periodos": [
           {
             "fechaInicial": {
-              "year": 2013,
+              "year": 2011,
               "month": 1,
               "day": 1
             },
             "fechaFinal": {
-              "year": 2013,
-              "month": 6,
-              "day": 30
-            },
-            "cotizacion": 152140
-          },
-          {
-            "fechaInicial": {
-              "year": 2013,
-              "month": 7,
-              "day": 1
-            },
-            "fechaFinal": {
-              "year": 2013,
+              "year": 2011,
               "month": 12,
               "day": 31
             },
-            "cotizacion": 944420
+            "cotizacion": 896241
+          },
+          {
+            "fechaInicial": {
+              "year": 2012,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2012,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 98764531
           },
           {
             "fechaInicial": {
@@ -86,7 +156,77 @@
               "month": 12,
               "day": 31
             },
-            "cotizacion": 14587
+            "cotizacion": 948165
+          },
+          {
+            "fechaInicial": {
+              "year": 2010,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2010,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 98146
+          }
+        ]
+      },
+      {
+        "nombre": "EBIT",
+        "periodos": [
+          {
+            "fechaInicial": {
+              "year": 2007,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2007,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 923165
+          },
+          {
+            "fechaInicial": {
+              "year": 2011,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2011,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 12346
+          },
+          {
+            "fechaInicial": {
+              "year": 2012,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2012,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 668763
+          },
+          {
+            "fechaInicial": {
+              "year": 2013,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2013,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 3041656
           }
         ]
       },
@@ -95,55 +235,42 @@
         "periodos": [
           {
             "fechaInicial": {
-              "year": 2013,
+              "year": 2009,
               "month": 1,
               "day": 1
             },
             "fechaFinal": {
-              "year": 2013,
-              "month": 6,
-              "day": 30
-            },
-            "cotizacion": 152140
-          },
-          {
-            "fechaInicial": {
-              "year": 2013,
-              "month": 7,
-              "day": 1
-            },
-            "fechaFinal": {
-              "year": 2013,
+              "year": 2009,
               "month": 12,
               "day": 31
             },
-            "cotizacion": 944420
+            "cotizacion": 98798
           },
           {
             "fechaInicial": {
-              "year": 2014,
+              "year": 2011,
               "month": 1,
               "day": 1
             },
             "fechaFinal": {
-              "year": 2014,
+              "year": 2011,
               "month": 12,
               "day": 31
             },
-            "cotizacion": 14587
+            "cotizacion": 669879
           },
           {
             "fechaInicial": {
-              "year": 2012,
+              "year": 2010,
               "month": 1,
               "day": 1
             },
             "fechaFinal": {
-              "year": 2012,
+              "year": 2010,
               "month": 12,
               "day": 31
             },
-            "cotizacion": 74546
+            "cotizacion": 4569
           }
         ]
       },
@@ -152,21 +279,34 @@
         "periodos": [
           {
             "fechaInicial": {
-              "year": 2013,
+              "year": 2007,
               "month": 1,
               "day": 1
             },
             "fechaFinal": {
-              "year": 2013,
-              "month": 6,
-              "day": 30
+              "year": 2007,
+              "month": 12,
+              "day": 31
             },
-            "cotizacion": 152140
+            "cotizacion": 4894984
+          },
+          {
+            "fechaInicial": {
+              "year": 2012,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2012,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 323232
           },
           {
             "fechaInicial": {
               "year": 2013,
-              "month": 7,
+              "month": 1,
               "day": 1
             },
             "fechaFinal": {
@@ -174,33 +314,7 @@
               "month": 12,
               "day": 31
             },
-            "cotizacion": 944420
-          },
-          {
-            "fechaInicial": {
-              "year": 2014,
-              "month": 1,
-              "day": 1
-            },
-            "fechaFinal": {
-              "year": 2014,
-              "month": 12,
-              "day": 31
-            },
-            "cotizacion": 14587
-          },
-          {
-            "fechaInicial": {
-              "year": 2011,
-              "month": 1,
-              "day": 1
-            },
-            "fechaFinal": {
-              "year": 2011,
-              "month": 12,
-              "day": 31
-            },
-            "cotizacion": 23566
+            "cotizacion": 239669
           }
         ]
       }
@@ -214,12 +328,25 @@
         "periodos": [
           {
             "fechaInicial": {
-              "year": 2013,
+              "year": 2009,
               "month": 1,
               "day": 1
             },
             "fechaFinal": {
-              "year": 2013,
+              "year": 2009,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 74546
+          },
+          {
+            "fechaInicial": {
+              "year": 2010,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2010,
               "month": 6,
               "day": 30
             },
@@ -227,29 +354,16 @@
           },
           {
             "fechaInicial": {
-              "year": 2013,
+              "year": 2010,
               "month": 7,
               "day": 1
             },
             "fechaFinal": {
-              "year": 2013,
+              "year": 2010,
               "month": 12,
               "day": 31
             },
             "cotizacion": 944420
-          },
-          {
-            "fechaInicial": {
-              "year": 2014,
-              "month": 1,
-              "day": 1
-            },
-            "fechaFinal": {
-              "year": 2014,
-              "month": 12,
-              "day": 31
-            },
-            "cotizacion": 14587
           }
         ]
       },
@@ -258,42 +372,42 @@
         "periodos": [
           {
             "fechaInicial": {
-              "year": 2013,
+              "year": 2011,
               "month": 1,
               "day": 1
             },
             "fechaFinal": {
-              "year": 2013,
-              "month": 6,
-              "day": 30
-            },
-            "cotizacion": 152140
-          },
-          {
-            "fechaInicial": {
-              "year": 2013,
-              "month": 7,
-              "day": 1
-            },
-            "fechaFinal": {
-              "year": 2013,
-              "month": 12,
-              "day": 31
-            },
-            "cotizacion": 944420
-          },
-          {
-            "fechaInicial": {
-              "year": 2014,
-              "month": 1,
-              "day": 1
-            },
-            "fechaFinal": {
-              "year": 2014,
+              "year": 2011,
               "month": 12,
               "day": 31
             },
             "cotizacion": 14587
+          },
+          {
+            "fechaInicial": {
+              "year": 2012,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2012,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 23566
+          },
+          {
+            "fechaInicial": {
+              "year": 2013,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2013,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 800000
           }
         ]
       },
@@ -302,42 +416,509 @@
         "periodos": [
           {
             "fechaInicial": {
-              "year": 2013,
+              "year": 2011,
               "month": 1,
               "day": 1
             },
             "fechaFinal": {
-              "year": 2013,
-              "month": 6,
-              "day": 30
-            },
-            "cotizacion": 152140
-          },
-          {
-            "fechaInicial": {
-              "year": 2013,
-              "month": 7,
-              "day": 1
-            },
-            "fechaFinal": {
-              "year": 2013,
-              "month": 12,
-              "day": 31
-            },
-            "cotizacion": 944420
-          },
-          {
-            "fechaInicial": {
-              "year": 2014,
-              "month": 1,
-              "day": 1
-            },
-            "fechaFinal": {
-              "year": 2014,
+              "year": 2011,
               "month": 12,
               "day": 31
             },
             "cotizacion": 14587
+          },
+          {
+            "fechaInicial": {
+              "year": 2012,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2012,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 70532
+          },
+          {
+            "fechaInicial": {
+              "year": 2013,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2014,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 100009
+          },
+          {
+            "fechaInicial": {
+              "year": 2014,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2014,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 789456123
+          },
+          {
+            "fechaInicial": {
+              "year": 2015,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2015,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 93331
+          },
+          {
+            "fechaInicial": {
+              "year": 2016,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2016,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 64246
+          }
+        ]
+      },
+      {
+        "nombre": "EBIT",
+        "periodos": [
+          {
+            "fechaInicial": {
+              "year": 2011,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2011,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 887779
+          },
+          {
+            "fechaInicial": {
+              "year": 2012,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2012,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 796524
+          },
+          {
+            "fechaInicial": {
+              "year": 2013,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2013,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 997545
+          },
+          {
+            "fechaInicial": {
+              "year": 2015,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2015,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 556487
+          },
+          {
+            "fechaInicial": {
+              "year": 2008,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2008,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 89000
+          },
+          {
+            "fechaInicial": {
+              "year": 2009,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2009,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 123456
+          },
+          {
+            "fechaInicial": {
+              "year": 2010,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2010,
+              "month": 6,
+              "day": 30
+            },
+            "cotizacion": 789456
+          },
+          {
+            "fechaInicial": {
+              "year": 2010,
+              "month": 7,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2010,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 52896
+          }
+        ]
+      },
+      {
+        "nombre": "Ingreso Neto en Operaciones Continuas",
+        "periodos": [
+          {
+            "fechaInicial": {
+              "year": 2010,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2010,
+              "month": 6,
+              "day": 30
+            },
+            "cotizacion": 789456
+          },
+          {
+            "fechaInicial": {
+              "year": 2010,
+              "month": 7,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2010,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 52896
+          },
+          {
+            "fechaInicial": {
+              "year": 2011,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2011,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 49731
+          },
+          {
+            "fechaInicial": {
+              "year": 2012,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2012,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 46791
+          },
+          {
+            "fechaInicial": {
+              "year": 2013,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2013,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 6970
+          }
+        ]
+      },
+      {
+        "nombre": "Ingreso Neto en Operaciones Discontinuadas",
+        "periodos": [
+          {
+            "fechaInicial": {
+              "year": 2014,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2014,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 321678
+          },
+          {
+            "fechaInicial": {
+              "year": 2015,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2015,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 13976
+          },
+          {
+            "fechaInicial": {
+              "year": 2016,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2016,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 4646258
+          },
+          {
+            "fechaInicial": {
+              "year": 2007,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2007,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 794679
+          }
+        ]
+      },
+      {
+        "nombre": "Dividendos",
+        "periodos": [
+          {
+            "fechaInicial": {
+              "year": 2011,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2011,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 14587
+          },
+          {
+            "fechaInicial": {
+              "year": 2012,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2012,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 70532
+          },
+          {
+            "fechaInicial": {
+              "year": 2013,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2014,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 100009
+          },
+          {
+            "fechaInicial": {
+              "year": 2014,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2014,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 789456123
+          },
+          {
+            "fechaInicial": {
+              "year": 2015,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2015,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 93331
+          },
+          {
+            "fechaInicial": {
+              "year": 2016,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2016,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 64246
+          }
+        ]
+      },
+      {
+        "nombre": "Capital Total",
+        "periodos": [
+          {
+            "fechaInicial": {
+              "year": 2011,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2011,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 887779
+          },
+          {
+            "fechaInicial": {
+              "year": 2012,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2012,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 796524
+          },
+          {
+            "fechaInicial": {
+              "year": 2013,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2013,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 997545
+          },
+          {
+            "fechaInicial": {
+              "year": 2015,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2015,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 556487
+          },
+          {
+            "fechaInicial": {
+              "year": 2008,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2008,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 89000
+          },
+          {
+            "fechaInicial": {
+              "year": 2009,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2009,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 123456
+          },
+          {
+            "fechaInicial": {
+              "year": 2010,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2010,
+              "month": 6,
+              "day": 30
+            },
+            "cotizacion": 789456
+          },
+          {
+            "fechaInicial": {
+              "year": 2010,
+              "month": 7,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2010,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 52896
           }
         ]
       }
@@ -347,46 +928,90 @@
     "name": "Dolce\u0026Gabbana",
     "cuentas": [
       {
+        "nombre": "EBITDA",
+        "periodos": [
+          {
+            "fechaInicial": {
+              "year": 2014,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2014,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 20168
+          },
+          {
+            "fechaInicial": {
+              "year": 2015,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2015,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 444666
+          },
+          {
+            "fechaInicial": {
+              "year": 2016,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2016,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 77756
+          }
+        ]
+      },
+      {
         "nombre": "FDS",
         "periodos": [
           {
             "fechaInicial": {
-              "year": 2013,
+              "year": 2008,
               "month": 1,
               "day": 1
             },
             "fechaFinal": {
-              "year": 2013,
-              "month": 6,
-              "day": 30
+              "year": 2008,
+              "month": 12,
+              "day": 31
             },
-            "cotizacion": 152140
+            "cotizacion": 446655
           },
           {
             "fechaInicial": {
-              "year": 2013,
+              "year": 2009,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2009,
+              "month": 6,
+              "day": 30
+            },
+            "cotizacion": 65558
+          },
+          {
+            "fechaInicial": {
+              "year": 2009,
               "month": 7,
               "day": 1
             },
             "fechaFinal": {
-              "year": 2013,
+              "year": 2009,
               "month": 12,
               "day": 31
             },
-            "cotizacion": 944420
-          },
-          {
-            "fechaInicial": {
-              "year": 2014,
-              "month": 1,
-              "day": 1
-            },
-            "fechaFinal": {
-              "year": 2014,
-              "month": 12,
-              "day": 31
-            },
-            "cotizacion": 14587
+            "cotizacion": 33315
           }
         ]
       },
@@ -395,89 +1020,6 @@
         "periodos": [
           {
             "fechaInicial": {
-              "year": 2013,
-              "month": 1,
-              "day": 1
-            },
-            "fechaFinal": {
-              "year": 2013,
-              "month": 6,
-              "day": 30
-            },
-            "cotizacion": 152140
-          },
-          {
-            "fechaInicial": {
-              "year": 2013,
-              "month": 7,
-              "day": 1
-            },
-            "fechaFinal": {
-              "year": 2013,
-              "month": 12,
-              "day": 31
-            },
-            "cotizacion": 944420
-          },
-          {
-            "fechaInicial": {
-              "year": 2014,
-              "month": 1,
-              "day": 1
-            },
-            "fechaFinal": {
-              "year": 2014,
-              "month": 12,
-              "day": 31
-            },
-            "cotizacion": 14587
-          }
-        ]
-      },
-      {
-        "nombre": "Ingreso Neto en Operaciones Discontinuadas",
-        "periodos": [
-          {
-            "fechaInicial": {
-              "year": 2013,
-              "month": 1,
-              "day": 1
-            },
-            "fechaFinal": {
-              "year": 2013,
-              "month": 6,
-              "day": 30
-            },
-            "cotizacion": 152140
-          },
-          {
-            "fechaInicial": {
-              "year": 2013,
-              "month": 7,
-              "day": 1
-            },
-            "fechaFinal": {
-              "year": 2013,
-              "month": 12,
-              "day": 31
-            },
-            "cotizacion": 944420
-          },
-          {
-            "fechaInicial": {
-              "year": 2014,
-              "month": 1,
-              "day": 1
-            },
-            "fechaFinal": {
-              "year": 2014,
-              "month": 12,
-              "day": 31
-            },
-            "cotizacion": 14587
-          },
-          {
-            "fechaInicial": {
               "year": 2011,
               "month": 1,
               "day": 1
@@ -487,7 +1029,98 @@
               "month": 12,
               "day": 31
             },
-            "cotizacion": 23566
+            "cotizacion": 97465
+          },
+          {
+            "fechaInicial": {
+              "year": 2014,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2014,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 388346
+          },
+          {
+            "fechaInicial": {
+              "year": 2015,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2015,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 80064
+          },
+          {
+            "fechaInicial": {
+              "year": 2016,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2016,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 721654
+          },
+          {
+            "fechaInicial": {
+              "year": 2010,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2010,
+              "month": 6,
+              "day": 30
+            },
+            "cotizacion": 15665
+          },
+          {
+            "fechaInicial": {
+              "year": 2010,
+              "month": 7,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2010,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 198765
+          },
+          {
+            "fechaInicial": {
+              "year": 2012,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2012,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 323232
+          },
+          {
+            "fechaInicial": {
+              "year": 2013,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2013,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 239669
           }
         ]
       },
@@ -502,23 +1135,163 @@
             },
             "fechaFinal": {
               "year": 2013,
-              "month": 6,
-              "day": 30
+              "month": 12,
+              "day": 31
             },
-            "cotizacion": 152140
+            "cotizacion": 54555
           },
           {
             "fechaInicial": {
-              "year": 2013,
+              "year": 2012,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2012,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 459876
+          },
+          {
+            "fechaInicial": {
+              "year": 2014,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2014,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 7765
+          },
+          {
+            "fechaInicial": {
+              "year": 2015,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2015,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 5196851
+          },
+          {
+            "fechaInicial": {
+              "year": 2016,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2016,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 19859
+          },
+          {
+            "fechaInicial": {
+              "year": 2008,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2008,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 525258
+          }
+        ]
+      },
+      {
+        "nombre": "Ingreso Neto en Operaciones Continuas",
+        "periodos": [
+          {
+            "fechaInicial": {
+              "year": 2009,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2009,
+              "month": 6,
+              "day": 30
+            },
+            "cotizacion": 28282825
+          },
+          {
+            "fechaInicial": {
+              "year": 2009,
               "month": 7,
               "day": 1
             },
             "fechaFinal": {
+              "year": 2009,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 369636
+          },
+          {
+            "fechaInicial": {
+              "year": 2010,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2010,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 369663
+          },
+          {
+            "fechaInicial": {
+              "year": 2011,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2011,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 88636
+          }
+        ]
+      },
+      {
+        "nombre": "Ingreso Neto en Operaciones Discontinuadas",
+        "periodos": [
+          {
+            "fechaInicial": {
+              "year": 2012,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2012,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 26969
+          },
+          {
+            "fechaInicial": {
+              "year": 2013,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
               "year": 2013,
               "month": 12,
               "day": 31
             },
-            "cotizacion": 944420
+            "cotizacion": 3646469
           },
           {
             "fechaInicial": {
@@ -531,7 +1304,64 @@
               "month": 12,
               "day": 31
             },
-            "cotizacion": 14587
+            "cotizacion": 97985
+          },
+          {
+            "fechaInicial": {
+              "year": 2015,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2015,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 112355
+          }
+        ]
+      },
+      {
+        "nombre": "Dividendos",
+        "periodos": [
+          {
+            "fechaInicial": {
+              "year": 2011,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2011,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 97465
+          },
+          {
+            "fechaInicial": {
+              "year": 2014,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2014,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 388346
+          },
+          {
+            "fechaInicial": {
+              "year": 2015,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2015,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 80064
           },
           {
             "fechaInicial": {
@@ -544,7 +1374,142 @@
               "month": 12,
               "day": 31
             },
-            "cotizacion": 89563
+            "cotizacion": 721654
+          },
+          {
+            "fechaInicial": {
+              "year": 2010,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2010,
+              "month": 6,
+              "day": 30
+            },
+            "cotizacion": 15665
+          },
+          {
+            "fechaInicial": {
+              "year": 2010,
+              "month": 7,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2010,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 198765
+          },
+          {
+            "fechaInicial": {
+              "year": 2012,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2012,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 323232
+          },
+          {
+            "fechaInicial": {
+              "year": 2013,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2013,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 239669
+          }
+        ]
+      },
+      {
+        "nombre": "Capital Total",
+        "periodos": [
+          {
+            "fechaInicial": {
+              "year": 2013,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2013,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 54555
+          },
+          {
+            "fechaInicial": {
+              "year": 2012,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2012,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 459876
+          },
+          {
+            "fechaInicial": {
+              "year": 2014,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2014,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 7765
+          },
+          {
+            "fechaInicial": {
+              "year": 2015,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2015,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 5196851
+          },
+          {
+            "fechaInicial": {
+              "year": 2016,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2016,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 19859
+          },
+          {
+            "fechaInicial": {
+              "year": 2008,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2008,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 525258
           }
         ]
       }
@@ -554,25 +1519,82 @@
     "name": "Twitter",
     "cuentas": [
       {
-        "nombre": "Ingreso Neto en Operaciones Continuas",
+        "nombre": "EBITDA",
         "periodos": [
           {
             "fechaInicial": {
-              "year": 2013,
+              "year": 2016,
               "month": 1,
               "day": 1
             },
             "fechaFinal": {
-              "year": 2013,
-              "month": 6,
-              "day": 30
+              "year": 2016,
+              "month": 12,
+              "day": 31
             },
-            "cotizacion": 152140
+            "cotizacion": 222456
+          },
+          {
+            "fechaInicial": {
+              "year": 2008,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2008,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 335654
+          },
+          {
+            "fechaInicial": {
+              "year": 2009,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2009,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 35468
+          },
+          {
+            "fechaInicial": {
+              "year": 2010,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2010,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 34225
+          }
+        ]
+      },
+      {
+        "nombre": "FDS",
+        "periodos": [
+          {
+            "fechaInicial": {
+              "year": 2011,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2011,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 223658
           },
           {
             "fechaInicial": {
               "year": 2013,
-              "month": 7,
+              "month": 1,
               "day": 1
             },
             "fechaFinal": {
@@ -580,20 +1602,7 @@
               "month": 12,
               "day": 31
             },
-            "cotizacion": 944420
-          },
-          {
-            "fechaInicial": {
-              "year": 2014,
-              "month": 1,
-              "day": 1
-            },
-            "fechaFinal": {
-              "year": 2014,
-              "month": 12,
-              "day": 31
-            },
-            "cotizacion": 14587
+            "cotizacion": 58798
           },
           {
             "fechaInicial": {
@@ -606,7 +1615,20 @@
               "month": 12,
               "day": 31
             },
-            "cotizacion": 74546
+            "cotizacion": 55897
+          },
+          {
+            "fechaInicial": {
+              "year": 2013,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2013,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 50546
           }
         ]
       },
@@ -615,86 +1637,42 @@
         "periodos": [
           {
             "fechaInicial": {
-              "year": 2013,
+              "year": 2009,
               "month": 1,
               "day": 1
             },
             "fechaFinal": {
-              "year": 2013,
-              "month": 6,
-              "day": 30
-            },
-            "cotizacion": 152140
-          },
-          {
-            "fechaInicial": {
-              "year": 2013,
-              "month": 7,
-              "day": 1
-            },
-            "fechaFinal": {
-              "year": 2013,
+              "year": 2009,
               "month": 12,
               "day": 31
             },
-            "cotizacion": 944420
+            "cotizacion": 98798
           },
           {
             "fechaInicial": {
-              "year": 2014,
+              "year": 2011,
               "month": 1,
               "day": 1
             },
             "fechaFinal": {
-              "year": 2014,
+              "year": 2011,
               "month": 12,
               "day": 31
             },
-            "cotizacion": 14587
-          }
-        ]
-      },
-      {
-        "nombre": "EBITDA",
-        "periodos": [
+            "cotizacion": 669879
+          },
           {
             "fechaInicial": {
-              "year": 2013,
+              "year": 2010,
               "month": 1,
               "day": 1
             },
             "fechaFinal": {
-              "year": 2013,
-              "month": 6,
-              "day": 30
-            },
-            "cotizacion": 152140
-          },
-          {
-            "fechaInicial": {
-              "year": 2013,
-              "month": 7,
-              "day": 1
-            },
-            "fechaFinal": {
-              "year": 2013,
+              "year": 2010,
               "month": 12,
               "day": 31
             },
-            "cotizacion": 944420
-          },
-          {
-            "fechaInicial": {
-              "year": 2014,
-              "month": 1,
-              "day": 1
-            },
-            "fechaFinal": {
-              "year": 2014,
-              "month": 12,
-              "day": 31
-            },
-            "cotizacion": 14587
+            "cotizacion": 4569
           }
         ]
       },
@@ -703,55 +1681,143 @@
         "periodos": [
           {
             "fechaInicial": {
+              "year": 2007,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2007,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 4894984
+          },
+          {
+            "fechaInicial": {
+              "year": 2008,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2008,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 9879846
+          },
+          {
+            "fechaInicial": {
               "year": 2013,
               "month": 1,
               "day": 1
             },
             "fechaFinal": {
               "year": 2013,
-              "month": 6,
-              "day": 30
+              "month": 12,
+              "day": 31
             },
-            "cotizacion": 152140
+            "cotizacion": 800000
+          }
+        ]
+      },
+      {
+        "nombre": "Ingreso Neto en Operaciones Continuas",
+        "periodos": [
+          {
+            "fechaInicial": {
+              "year": 2014,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2014,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 20168
           },
           {
             "fechaInicial": {
-              "year": 2013,
+              "year": 2015,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2015,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 444666
+          },
+          {
+            "fechaInicial": {
+              "year": 2016,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2016,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 77756
+          }
+        ]
+      },
+      {
+        "nombre": "Ingreso Neto en Operaciones Discontinuadas",
+        "periodos": [
+          {
+            "fechaInicial": {
+              "year": 2008,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2008,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 89000
+          },
+          {
+            "fechaInicial": {
+              "year": 2009,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2009,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 123456
+          },
+          {
+            "fechaInicial": {
+              "year": 2010,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2010,
+              "month": 6,
+              "day": 30
+            },
+            "cotizacion": 789456
+          },
+          {
+            "fechaInicial": {
+              "year": 2010,
               "month": 7,
               "day": 1
             },
             "fechaFinal": {
-              "year": 2013,
+              "year": 2010,
               "month": 12,
               "day": 31
             },
-            "cotizacion": 944420
-          },
-          {
-            "fechaInicial": {
-              "year": 2014,
-              "month": 1,
-              "day": 1
-            },
-            "fechaFinal": {
-              "year": 2014,
-              "month": 12,
-              "day": 31
-            },
-            "cotizacion": 14587
-          },
-          {
-            "fechaInicial": {
-              "year": 2016,
-              "month": 1,
-              "day": 1
-            },
-            "fechaFinal": {
-              "year": 2016,
-              "month": 12,
-              "day": 31
-            },
-            "cotizacion": 89563
+            "cotizacion": 52896
           }
         ]
       }
@@ -761,33 +1827,129 @@
     "name": "Snapchat",
     "cuentas": [
       {
-        "nombre": "Ingreso Neto en Operaciones Continuas",
+        "nombre": "EBITDA",
         "periodos": [
           {
             "fechaInicial": {
-              "year": 2013,
+              "year": 2011,
               "month": 1,
               "day": 1
             },
             "fechaFinal": {
-              "year": 2013,
-              "month": 6,
-              "day": 30
+              "year": 2011,
+              "month": 12,
+              "day": 31
             },
-            "cotizacion": 152140
+            "cotizacion": 63648
           },
           {
             "fechaInicial": {
-              "year": 2013,
+              "year": 2011,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2011,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 63648
+          },
+          {
+            "fechaInicial": {
+              "year": 2010,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2010,
+              "month": 6,
+              "day": 30
+            },
+            "cotizacion": 789456
+          },
+          {
+            "fechaInicial": {
+              "year": 2010,
               "month": 7,
               "day": 1
             },
             "fechaFinal": {
+              "year": 2010,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 52896
+          },
+          {
+            "fechaInicial": {
+              "year": 2011,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2011,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 49731
+          },
+          {
+            "fechaInicial": {
+              "year": 2012,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2012,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 46791
+          },
+          {
+            "fechaInicial": {
+              "year": 2013,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
               "year": 2013,
               "month": 12,
               "day": 31
             },
-            "cotizacion": 944420
+            "cotizacion": 6970
+          }
+        ]
+      },
+      {
+        "nombre": "FDS",
+        "periodos": [
+          {
+            "fechaInicial": {
+              "year": 2011,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2011,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 63648
+          },
+          {
+            "fechaInicial": {
+              "year": 2011,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2011,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 63648
           },
           {
             "fechaInicial": {
@@ -800,20 +1962,46 @@
               "month": 12,
               "day": 31
             },
-            "cotizacion": 14587
+            "cotizacion": 565468
           },
           {
             "fechaInicial": {
-              "year": 2012,
+              "year": 2015,
               "month": 1,
               "day": 1
             },
             "fechaFinal": {
-              "year": 2012,
+              "year": 2015,
               "month": 12,
               "day": 31
             },
-            "cotizacion": 74546
+            "cotizacion": 98799
+          },
+          {
+            "fechaInicial": {
+              "year": 2016,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2016,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 89879
+          },
+          {
+            "fechaInicial": {
+              "year": 2008,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2008,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 9879846
           }
         ]
       },
@@ -822,86 +2010,55 @@
         "periodos": [
           {
             "fechaInicial": {
-              "year": 2013,
+              "year": 2009,
               "month": 1,
               "day": 1
             },
             "fechaFinal": {
-              "year": 2013,
+              "year": 2009,
               "month": 6,
               "day": 30
             },
-            "cotizacion": 152140
+            "cotizacion": 23462
           },
           {
             "fechaInicial": {
-              "year": 2013,
+              "year": 2009,
               "month": 7,
               "day": 1
             },
             "fechaFinal": {
-              "year": 2013,
+              "year": 2009,
               "month": 12,
               "day": 31
             },
-            "cotizacion": 944420
+            "cotizacion": 303456
           },
           {
             "fechaInicial": {
-              "year": 2014,
+              "year": 2010,
               "month": 1,
               "day": 1
             },
             "fechaFinal": {
-              "year": 2014,
+              "year": 2010,
               "month": 12,
               "day": 31
             },
-            "cotizacion": 14587
-          }
-        ]
-      },
-      {
-        "nombre": "EBITDA",
-        "periodos": [
+            "cotizacion": 666666
+          },
           {
             "fechaInicial": {
-              "year": 2013,
+              "year": 2011,
               "month": 1,
               "day": 1
             },
             "fechaFinal": {
-              "year": 2013,
-              "month": 6,
-              "day": 30
-            },
-            "cotizacion": 152140
-          },
-          {
-            "fechaInicial": {
-              "year": 2013,
-              "month": 7,
-              "day": 1
-            },
-            "fechaFinal": {
-              "year": 2013,
+              "year": 2011,
               "month": 12,
               "day": 31
             },
-            "cotizacion": 944420
-          },
-          {
-            "fechaInicial": {
-              "year": 2014,
-              "month": 1,
-              "day": 1
-            },
-            "fechaFinal": {
-              "year": 2014,
-              "month": 12,
-              "day": 31
-            },
-            "cotizacion": 14587
+            "cotizacion": 333666
           }
         ]
       },
@@ -910,29 +2067,296 @@
         "periodos": [
           {
             "fechaInicial": {
+              "year": 2012,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2012,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 11133
+          },
+          {
+            "fechaInicial": {
               "year": 2013,
               "month": 1,
               "day": 1
             },
             "fechaFinal": {
               "year": 2013,
-              "month": 6,
-              "day": 30
+              "month": 12,
+              "day": 31
             },
-            "cotizacion": 152140
+            "cotizacion": 8000024
+          },
+          {
+            "fechaInicial": {
+              "year": 2014,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2014,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 126798
+          },
+          {
+            "fechaInicial": {
+              "year": 2015,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2015,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 1658
+          }
+        ]
+      },
+      {
+        "nombre": "Ingreso Neto en Operaciones Continuas",
+        "periodos": [
+          {
+            "fechaInicial": {
+              "year": 2011,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2011,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 896241
+          },
+          {
+            "fechaInicial": {
+              "year": 2012,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2012,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 98764531
+          },
+          {
+            "fechaInicial": {
+              "year": 2014,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2014,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 948165
+          },
+          {
+            "fechaInicial": {
+              "year": 2010,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2010,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 98146
+          }
+        ]
+      },
+      {
+        "nombre": "Ingreso Neto en Operaciones Discontinuadas",
+        "periodos": [
+          {
+            "fechaInicial": {
+              "year": 2007,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2007,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 923165
+          },
+          {
+            "fechaInicial": {
+              "year": 2011,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2011,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 12346
+          },
+          {
+            "fechaInicial": {
+              "year": 2012,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2012,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 668763
           },
           {
             "fechaInicial": {
               "year": 2013,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2013,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 3041656
+          }
+        ]
+      },
+      {
+        "nombre": "Dividendos",
+        "periodos": [
+          {
+            "fechaInicial": {
+              "year": 2011,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2011,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 63648
+          },
+          {
+            "fechaInicial": {
+              "year": 2011,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2011,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 63648
+          },
+          {
+            "fechaInicial": {
+              "year": 2010,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2010,
+              "month": 6,
+              "day": 30
+            },
+            "cotizacion": 789456
+          },
+          {
+            "fechaInicial": {
+              "year": 2010,
               "month": 7,
               "day": 1
             },
             "fechaFinal": {
+              "year": 2010,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 52896
+          },
+          {
+            "fechaInicial": {
+              "year": 2011,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2011,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 49731
+          },
+          {
+            "fechaInicial": {
+              "year": 2012,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2012,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 46791
+          },
+          {
+            "fechaInicial": {
+              "year": 2013,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
               "year": 2013,
               "month": 12,
               "day": 31
             },
-            "cotizacion": 944420
+            "cotizacion": 6970
+          }
+        ]
+      },
+      {
+        "nombre": "Capital Total",
+        "periodos": [
+          {
+            "fechaInicial": {
+              "year": 2011,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2011,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 63648
+          },
+          {
+            "fechaInicial": {
+              "year": 2011,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2011,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 63648
           },
           {
             "fechaInicial": {
@@ -945,7 +2369,20 @@
               "month": 12,
               "day": 31
             },
-            "cotizacion": 14587
+            "cotizacion": 565468
+          },
+          {
+            "fechaInicial": {
+              "year": 2015,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2015,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 98799
           },
           {
             "fechaInicial": {
@@ -958,7 +2395,20 @@
               "month": 12,
               "day": 31
             },
-            "cotizacion": 89563
+            "cotizacion": 89879
+          },
+          {
+            "fechaInicial": {
+              "year": 2008,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2008,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 9879846
           }
         ]
       }
@@ -972,74 +2422,105 @@
         "periodos": [
           {
             "fechaInicial": {
-              "year": 2013,
+              "year": 2009,
               "month": 1,
               "day": 1
             },
             "fechaFinal": {
-              "year": 2013,
+              "year": 2009,
               "month": 6,
               "day": 30
             },
-            "cotizacion": 152140
+            "cotizacion": 23462
           },
           {
             "fechaInicial": {
-              "year": 2013,
+              "year": 2009,
               "month": 7,
               "day": 1
             },
             "fechaFinal": {
-              "year": 2013,
+              "year": 2009,
               "month": 12,
               "day": 31
             },
-            "cotizacion": 944420
+            "cotizacion": 303456
           },
           {
             "fechaInicial": {
-              "year": 2014,
+              "year": 2010,
               "month": 1,
               "day": 1
             },
             "fechaFinal": {
-              "year": 2014,
+              "year": 2010,
               "month": 12,
               "day": 31
             },
-            "cotizacion": 14587
+            "cotizacion": 666666
           }
         ]
       },
       {
-        "nombre": "Ingreso Neto en Operaciones Discontinuadas",
+        "nombre": "FDS",
         "periodos": [
           {
             "fechaInicial": {
-              "year": 2013,
+              "year": 2010,
               "month": 1,
               "day": 1
             },
             "fechaFinal": {
-              "year": 2013,
+              "year": 2010,
               "month": 6,
               "day": 30
             },
-            "cotizacion": 152140
+            "cotizacion": 15665
           },
           {
             "fechaInicial": {
-              "year": 2013,
+              "year": 2010,
               "month": 7,
               "day": 1
             },
             "fechaFinal": {
+              "year": 2010,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 198765
+          },
+          {
+            "fechaInicial": {
+              "year": 2012,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2012,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 323232
+          },
+          {
+            "fechaInicial": {
+              "year": 2013,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
               "year": 2013,
               "month": 12,
               "day": 31
             },
-            "cotizacion": 944420
-          },
+            "cotizacion": 239669
+          }
+        ]
+      },
+      {
+        "nombre": "Free Cash Flow",
+        "periodos": [
           {
             "fechaInicial": {
               "year": 2014,
@@ -1051,20 +2532,33 @@
               "month": 12,
               "day": 31
             },
-            "cotizacion": 14587
+            "cotizacion": 7765
           },
           {
             "fechaInicial": {
-              "year": 2011,
+              "year": 2015,
               "month": 1,
               "day": 1
             },
             "fechaFinal": {
-              "year": 2011,
+              "year": 2015,
               "month": 12,
               "day": 31
             },
-            "cotizacion": 23566
+            "cotizacion": 5196851
+          },
+          {
+            "fechaInicial": {
+              "year": 2016,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2016,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 19859
           }
         ]
       },
@@ -1073,29 +2567,16 @@
         "periodos": [
           {
             "fechaInicial": {
-              "year": 2013,
+              "year": 2012,
               "month": 1,
               "day": 1
             },
             "fechaFinal": {
-              "year": 2013,
-              "month": 6,
-              "day": 30
-            },
-            "cotizacion": 152140
-          },
-          {
-            "fechaInicial": {
-              "year": 2013,
-              "month": 7,
-              "day": 1
-            },
-            "fechaFinal": {
-              "year": 2013,
+              "year": 2012,
               "month": 12,
               "day": 31
             },
-            "cotizacion": 944420
+            "cotizacion": 98764531
           },
           {
             "fechaInicial": {
@@ -1108,7 +2589,108 @@
               "month": 12,
               "day": 31
             },
-            "cotizacion": 14587
+            "cotizacion": 948165
+          },
+          {
+            "fechaInicial": {
+              "year": 2010,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2010,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 98146
+          }
+        ]
+      },
+      {
+        "nombre": "Ingreso Neto en Operaciones Continuas",
+        "periodos": [
+          {
+            "fechaInicial": {
+              "year": 2007,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2007,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 923165
+          },
+          {
+            "fechaInicial": {
+              "year": 2011,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2011,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 12346
+          },
+          {
+            "fechaInicial": {
+              "year": 2012,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2012,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 668763
+          },
+          {
+            "fechaInicial": {
+              "year": 2013,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2013,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 3041656
+          }
+        ]
+      },
+      {
+        "nombre": "Ingreso Neto en Operaciones Discontinuadas",
+        "periodos": [
+          {
+            "fechaInicial": {
+              "year": 2014,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2014,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 565468
+          },
+          {
+            "fechaInicial": {
+              "year": 2015,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2015,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 98799
           },
           {
             "fechaInicial": {
@@ -1121,7 +2703,20 @@
               "month": 12,
               "day": 31
             },
-            "cotizacion": 89563
+            "cotizacion": 89879
+          },
+          {
+            "fechaInicial": {
+              "year": 2008,
+              "month": 1,
+              "day": 1
+            },
+            "fechaFinal": {
+              "year": 2008,
+              "month": 12,
+              "day": 31
+            },
+            "cotizacion": 335654
           }
         ]
       }

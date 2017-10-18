@@ -6,20 +6,20 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import entities.Cuenta;
-import entities.Empresa;
+import model.Cuenta;
+import model.Empresa;
 
-public class CuentasHandler {
+public class CuentaController {
 	
-	HashSet<String> unrepeatedNombresDeCuentas ;
+	HashSet<String> nombresDeCuentasSinRepetir ;
 	HashSet<String> unrepeatedNombresDeIndicadres ;
 	RepositorioDeEmpresas repo ;
 	
-	public CuentasHandler(  ) {
+	public CuentaController(  ) {
 		DAOEmpresa dao = new DAOJsonEmpresa() ;
 		repo = RepositorioDeEmpresas.getInstance(dao) ;
 		try {
-			this.setUnrepeatedCuentasEIndicadores
+			this.setCuentasSinRepetir
 						( repo.getAllEmpresas () );
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -30,34 +30,34 @@ public class CuentasHandler {
 					//--------------------------------
 	}
 	
-	public void setUnrepeatedCuentasEIndicadores( List <Empresa> empresas )
+	public void setCuentasSinRepetir( List <Empresa> empresas )
 	{
-		this.unrepeatedNombresDeCuentas = new HashSet<>(); 
+		this.nombresDeCuentasSinRepetir = new HashSet<>(); 
 		Stream <Cuenta>cuentas = empresas.stream()
 								.map(e -> e.getCuentas())
 								.flatMap(x -> x.stream());
 		List<String> nombresDeCuentas = cuentas
 								.map(e -> e.getNombre())
 								.collect(Collectors.toList());
-		nombresDeCuentas.forEach(e -> unrepeatedNombresDeCuentas.add(e));
+		nombresDeCuentas.forEach(e -> nombresDeCuentasSinRepetir.add(e));
 	}
 
 	public boolean existeLaCuenta(String nombreDeCuenta)
 	{
-		return this.getUnrepeatedNombresDeCuentas().contains(nombreDeCuenta);
+		return this.getNombresDeCuentasSinRepetir().contains(nombreDeCuenta);
 	}
 
-	public HashSet<String> getUnrepeatedNombresDeCuentas() {
-		return this.unrepeatedNombresDeCuentas;
+	public HashSet<String> getNombresDeCuentasSinRepetir() {
+		return this.nombresDeCuentasSinRepetir;
 	}
 
-	public List<String> getUnrepeatedNombresDeCuentasAsList() {
-		return this.getUnrepeatedNombresDeCuentas()
+	public List<String> getNombresDeCuentasSinRepetirAsList() {
+		return this.getNombresDeCuentasSinRepetir()
 				.stream().collect(Collectors.toList());
 	}
 	
-	public void setUnrepeatedNombresDeCuentas(HashSet<String> unrepeatedNombresDeCuentas) {
-		this.unrepeatedNombresDeCuentas = unrepeatedNombresDeCuentas;
+	public void setNombresDeCuentasSinRepetir(HashSet<String> nombresDeCuentasSinRepetir) {
+		this.nombresDeCuentasSinRepetir = nombresDeCuentasSinRepetir;
 	}
 	
 }
