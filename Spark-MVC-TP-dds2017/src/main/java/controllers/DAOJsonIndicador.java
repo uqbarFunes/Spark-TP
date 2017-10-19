@@ -36,7 +36,7 @@ public class DAOJsonIndicador implements DAOIndicador {
 	{
 		List<Indicador> indicadores;
 		try {
-			indicadores = this.getAllIndicadores();
+			indicadores = this.getAllIndicadores( myUsuario );
 			List<String> nombresDeIndicadores = new ArrayList<>() ;
 			indicadores.forEach(e -> nombresDeIndicadores.add(e.getNombre()));
 			int index = nombresDeIndicadores.indexOf(nombreEmpresa) ;
@@ -48,7 +48,7 @@ public class DAOJsonIndicador implements DAOIndicador {
 	}
 
 	@Override
-	public ArrayList<Indicador> getAllIndicadores() throws IOException {
+	public ArrayList<Indicador> getAllIndicadores( String myUser ) throws IOException {
 		return null;
 	}
 

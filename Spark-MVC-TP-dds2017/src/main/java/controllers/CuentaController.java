@@ -22,7 +22,6 @@ public class CuentaController {
 			this.setCuentasSinRepetir
 						( repo.getAllEmpresas () );
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 					//don't forget getIndicadores!!!

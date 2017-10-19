@@ -40,9 +40,9 @@ public class RepositorioDeIndicadores {
 		this.daoIndicador.update(indicador);
 	}
 	
-	public ArrayList<Indicador> getAllIndicadores () throws IOException
+	public ArrayList<Indicador> getAllIndicadores ( String myUser ) throws IOException
 	{
-		return this.daoIndicador.getAllIndicadores() ;
+		return this.daoIndicador.getAllIndicadores( myUser ) ;
 	}
 
 }

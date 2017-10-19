@@ -20,13 +20,10 @@ public class TestParser {
 			new Calculator ("( 4   + 2 + 22 ) * 4 ", res) ;
 			parserResult = res[0] ;
 		} catch (NumberFormatException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (ParseException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (TokenMgrError e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -42,13 +39,10 @@ public class TestParser {
 				System.out.println("Infinito!");
 			}
 		} catch (NumberFormatException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (ParseException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (TokenMgrError e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} 
 		double nro = ( 4 + 2 + 22 ) * 4 ;

@@ -52,10 +52,9 @@ public class IndicadorController {
 		DAOIndicador dao = new DAOJsonIndicador() ;
 		repo = RepositorioDeIndicadores.getInstance(dao) ;
 		try {
-			this.setUnrepeatedCuentas
-						( repo.getAllIndicadores () );
+			this.setCuentasSinRepetir
+						( repo.getAllIndicadores ( myIndicador.getUsuario() ) );
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
@@ -69,10 +68,10 @@ public class IndicadorController {
 	
 	private boolean existeElIndicador ( String myNombreIndicador, String myUsuario )
 	{
-		return this.getUnrepeatedNombresDeIndicadores().contains(myNombreIndicador);
+		return this.getNombresDeIndicadoresSinRepeticiones().contains(myNombreIndicador);
 	}
 	
-	private HashSet<String> getUnrepeatedNombresDeIndicadores ()
+	private HashSet<String> getNombresDeIndicadoresSinRepeticiones ()
 	{
 		return this.nombresDeIndicadresSinRepetir ;
 	}
@@ -245,7 +244,7 @@ public class IndicadorController {
 		this.indicadores = indicadores;
 	}
 	
-	public void setUnrepeatedCuentas( List <Indicador> empresas )
+	public void setCuentasSinRepetir( List <Indicador> empresas )
 	{
 		this.nombresDeCuentasSinRepetir = new HashSet<>(); 
 		Stream <Cuenta>cuentas = empresas.stream()
