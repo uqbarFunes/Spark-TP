@@ -21,6 +21,11 @@ public class FilePath {
 		return instance ;
 	}
 	
+	public String getMetododologiasJsonPath()
+	{
+		return this.filePath + "\\metodologias" ;
+	}
+	
 	public String getEmpresasJsonPath()
 	{
 		return this.filePath + "\\empresas.json" ;

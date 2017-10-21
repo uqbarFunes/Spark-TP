@@ -1,28 +1,17 @@
 package controllers;
-import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
-import model.Cuenta;
 import model.Indicador;
-import view.IndicadorView;
 
 public class IndicadorController {
 
-	String formula ;
-	String nombre ;
-	String usuario ;
 	CuentaController cuentasController ;
 	
-	List<String> cuentas ;
-	List<String> indicadores ;
+	Indicador indicador ;
 	
 	HashSet<String> nombresDeCuentasSinRepetir ;
 	HashSet<String> nombresDeIndicadresSinRepetir ;
-	RepositorioDeIndicadores repo ;
+	private static IndicadorController instance = null ; 
 	
 	/**
 	 * Example of a list of accounts that stores the accounts
@@ -46,38 +35,69 @@ public class IndicadorController {
 	 * checking the HashSet to see if it contains the indicator's name.
 	 */
 	
-	public IndicadorController( Indicador myIndicador )
+	//TODO reemplazar los espacios a izquierda y derecha del ultimo caracter signirficativo de un string encontrado en formula
+	public static IndicadorController getInstance()
 	{
-		
-		DAOIndicador dao = new DAOJsonIndicador() ;
-		repo = RepositorioDeIndicadores.getInstance(dao) ;
-		try {
-			this.setCuentasSinRepetir
-						( repo.getAllIndicadores ( myIndicador.getUsuario() ) );
-		} catch (IOException e) {
-			e.printStackTrace();
+		if ( instance == null )
+		{
+			return new IndicadorController () ;
 		}
-		
-		/*
-		 * si normalizo la fórmula de un indicador dado, 
-		 * tengo que ver que el mismo sea 
-		 */
-		this.formula = normalizarNombresDeCuentasAndIndicadores( myIndicador.getFormula ( ) ) ;
-		
+		return instance ;
 	}
 	
-	private boolean existeElIndicador ( String myNombreIndicador, String myUsuario )
+	private void crearIndicador(String rawFormula, String indUser)
 	{
-		return this.getNombresDeIndicadoresSinRepeticiones().contains(myNombreIndicador);
+		int i = rawFormula.length()-1 ;
+		while ( i > 0 )
+		{
+			if ( rawFormula.charAt(i)=='=')
+			{
+				String formula=this.normalizarNombresDeCuentasAndIndicadores
+						(rawFormula.substring(i+1,rawFormula.length()));
+				String nombreIndicador=rawFormula.substring(0,i);
+				i = -1 ;
+				this.indicador = new Indicador ( nombreIndicador, formula, indUser ) ;
+			}
+			i -= 1 ;
+		}
+		this.indicador = null ;
 	}
 	
-	private HashSet<String> getNombresDeIndicadoresSinRepeticiones ()
+	public void setIndicador ( Indicador myIndicador)
 	{
-		return this.nombresDeIndicadresSinRepetir ;
+		this.indicador = myIndicador ;
 	}
 	
+	public Indicador getIndicador ()
+	{
+		return this.indicador ;
+	}
 	
-	private String normalizarNombresDeCuentasAndIndicadores(String expr)
+	public IndicadorController( )
+	{
+		//TODO Solucionar para que los controllers puedan tener cualquier tipo de persistencia
+		cuentasController = new CuentaController () ;
+		this.setNombresDeCuentasSinRepetir( );
+		this.nombresDeIndicadresSinRepetir = new HashSet<String> () ;
+		//TODO obtener nombres de indicadores sin repetir
+//		this.nombresDeIndicadresSinRepetir = this.getnombresDeIndicadoresSinRepetir () ;
+		
+	}
+	
+	//TODO existe el indicador NullPointer...
+//	private boolean existeElIndicador ( String myNombreIndicador, String myUsuario )
+//	{
+//		return this.getNombresDeIndicadoresSinRepeticiones().contains( myNombreIndicador );
+//	}
+	
+	//TODO getNomresDeIndicadores NullPointer...
+//	private HashSet<String> getNombresDeIndicadoresSinRepeticiones ()
+//	{
+//		return this.nombresDeIndicadresSinRepetir ;
+//	}
+	
+	
+	private String normalizarNombresDeCuentasAndIndicadores( String expr )
 	{
 		boolean recognizingVar = false ;
 	    String resultado = "";
@@ -99,14 +119,17 @@ public class IndicadorController {
 	    			variableName = new StringBuilder( resultado ).reverse().toString() ;
 	    			if ( cuentasController.existeLaCuenta(variableName) )
 	    			{
-	    				System.out.println("Existe la cuenta que está bien a la izquierda y es "+variableName);
-	    				expresionFinal = "cuenta{" + variableName + "}" + strAux;
-	    				this.cuentas.add(variableName);
+	    				System.out.println(
+	    						"Existe la cuenta que está totalmente "
+	    						+ "a la izquierda y es "+variableName);
+	    				expresionFinal = this.normalizarNombreDeCuentaHalladaEnFormula(variableName) + strAux;
+	    				this.indicador.addCuenta(variableName);
 	    			}
-	    			else if ( this.existeElIndicador (variableName, this.usuario ) )
-	    			{
-	    				
-	    			}
+	    			//TODO, si el indicador existe: NullPointer...
+//	    			else if ( this.existeElIndicador (variableName, this.usuario ) )
+//	    			{
+//	    				
+//	    			}
 	    			else
 	    			{
 	    				expresionFinal = variableName + strAux;
@@ -122,8 +145,9 @@ public class IndicadorController {
 	    			if ( cuentasController.existeLaCuenta(variableName) )
 	    			{
 	    				System.out.println("existe la cuenta "+variableName);
-	    				expresionFinal = expr.charAt(i) + "cuenta{" + variableName + "}" + strAux;
-	    				this.cuentas.add(variableName);
+	    				expresionFinal = expr.charAt(i) +
+	    						this.normalizarNombreDeCuentaHalladaEnFormula(variableName) + strAux;
+	    				this.indicador.addCuenta(variableName);
 	    			}
 	    			else
 	    			{
@@ -145,133 +169,105 @@ public class IndicadorController {
 	}
 	
 	
-	private void setNombreIndicadorAndFormula(String myFormula)
-	{
-		int i = myFormula.length()-1 ;
-		while ( i > 0 )
-		{
-			if ( myFormula.charAt(i)=='=')
-			{
-				this.formula=myFormula.substring(0,i);
-				this.nombre=myFormula.substring(i+1,myFormula.length());
-				i = -1 ;
-			}
-			i -= 1 ;
-		}
-	}
 	
-	public boolean replaceOneStringWithAnother(String searchedText, String someString)
+	
+	public boolean reemplazarCuentaOrIndicadorPorValorDelMismo
+		(String indicadorOrCuenta, String cotizacionDeIndicadorOrCuenta)
 	{
-		if ( this.formula.contains(searchedText) )
+		String indicadorFormulaAux = this.indicador.getFormula() ;
+		if ( indicadorFormulaAux.contains(indicadorOrCuenta) )
 		{
-			String auxString = this.formula.replace(searchedText, someString) ;
-			this.formula = auxString ;
-			System.out.println(this.formula);
+			String auxString = indicadorFormulaAux.replace
+					( indicadorOrCuenta , cotizacionDeIndicadorOrCuenta ) ;
+			indicador.setFormula( auxString ) ;
+			//TODO de acá va a sali lo que el parser debe recibir para detemriar si el indicador debe o no ser guardado
+			System.out.println( "Luego de reemplazar cuentas e indiacdor : " + indicador.getFormula() );
 			return true ;
 		}
 		return false ;
 	}
 	
-	public void divideIndicador( String userInput )
+	public String getNombreDeIndicador ()
 	{
-		
+		return this.indicador.getNombreDeIndicador() ;
 	}
 	
-	private void setAccounts(List<String> myAccounts) 
+	
+	
+	private void imprimirIndicador()
 	{
-		
-		for ( String acc : myAccounts ) 
-		{
-			StringBuilder cuentasDescubiertas = new StringBuilder() ;
-			cuentasDescubiertas.append("cuenta") ;
-			cuentasDescubiertas.append("{") ;
-			cuentasDescubiertas.append(acc) ;
-			cuentasDescubiertas.append("}") ;
-			this.cuentas.add(cuentasDescubiertas.toString()) ;
-		}
+		System.out.println("________________________________________________");
+		System.out.println("Nombre de indicador: " + this.getNombreDeIndicador() );
+		System.out.println("Nombre de usuario que cargó el indicador: " + 
+										this.getNombreDeUsuario() );
+		System.out.println("Fórmula del indicador: " + this.getFormula() );
+		System.out.println("________________________________________________");
 	}
-	/**
-	 * This function finds accounts, like
-	 * "EBITDA", "EBIT", or "Free Cash Flow", they are added
-	 * to the accounts' List
-	 * as "account{EBITDA}", etc...
-	 * @param formula
-	 */
-	private List<String> getAccountsFromFormula( String formula )
+	
+	private String normalizarNombreDeCuentaHalladaEnFormula ( String myAccount)
 	{
-		List<String> myAccounts = new ArrayList<>();
-		//accounts found on String are added to myAccounts' List.
-		return myAccounts ;
+		StringBuilder cuentasDescubierta = new StringBuilder() ;
+		cuentasDescubierta.append("cuenta") ;
+		cuentasDescubierta.append("{") ;
+		cuentasDescubierta.append(myAccount) ;
+		cuentasDescubierta.append("}") ;
+		return cuentasDescubierta.toString() ;
+	}
+	
+	//TODO normalizar indicador debe ser llamado cuando un indicador es encontrado en la fórmula
+	public String normalizarNombreDeIndicadorHalladoEnFormula( String myIndicador )
+	{
+		StringBuilder indicadorDescubierto = new StringBuilder() ;
+		indicadorDescubierto.append("indicador") ;
+		indicadorDescubierto.append("{") ;
+		indicadorDescubierto.append(myIndicador) ;
+		indicadorDescubierto.append("}") ;
+		return indicadorDescubierto.toString() ;
 	}
 	
 	public String getFormula() {
-		return formula;
+		return this.indicador.getFormula();
 	}
 
 	public void setFormula(String formula) {
-		this.formula = formula;
+		this.indicador.setFormula(formula);
 	}
 
-	public String getNombre() {
-		return nombre;
+	public void setNombreIndicador(String myNombreIndicador) {
+		this.indicador.setNombreDeIndicador(myNombreIndicador);
 	}
 
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
-
-	public String getUsuario() {
-		return usuario;
+	public String getNombreDeUsuario() {
+		return this.indicador.getNombreDeUsuario();
 	}
 
 	public void setUsuario(String usuario) {
-		this.usuario = usuario;
+		this.indicador.setNombreDeUsuario(usuario);
 	}
 
-	public List<String> getCuentas() {
-		return cuentas;
-	}
-
-	public void setCuentas(List<String> cuentas) {
-		this.cuentas = cuentas;
-	}
-
-	public List<String> getIndicadores() {
-		return indicadores;
-	}
-
-	public void setIndicadores(List<String> indicadores) {
-		this.indicadores = indicadores;
-	}
-	
-	public void setCuentasSinRepetir( List <Indicador> empresas )
-	{
-		this.nombresDeCuentasSinRepetir = new HashSet<>(); 
-		Stream <Cuenta>cuentas = empresas.stream()
-				.map(e -> e.getCuentas())
-				.flatMap(x -> x.stream());
-		List<String> nombresDeCuentas = cuentas
-				.map(e -> e.getNombre())
-				.collect(Collectors.toList());
-		nombresDeCuentas.forEach(e -> nombresDeCuentasSinRepetir.add(e));
-	}
-	
 	public boolean existeLaCuenta(String nombreDeCuenta)
 	{
-		return this.getNombresDeCuentasSinRepetir().contains(nombreDeCuenta);
+		return this.cuentasController.existeLaCuenta(nombreDeCuenta);
 	}
 	
 	public HashSet<String> getNombresDeCuentasSinRepetir() {
-		return this.nombresDeCuentasSinRepetir;
+		return this.cuentasController.getNombresDeCuentasSinRepetir() ;
+	}
+	
+	public static void main(String[] args) {
+		IndicadorController indicadorController = IndicadorController.getInstance() ;
+		indicadorController.crearIndicador("EbitdaMasEbit=EBITDA+EBIT", "Gastón");
+		System.out.println("Nombres de cuentas sin repetir...");
+		indicadorController.getNombresDeCuentasSinRepetir().forEach(System.out::println);
+		indicadorController.imprimirIndicador();
+		
 	}
 	
 	public List<String> getNombresDeCuentasSinRepetirAsList() {
-		return this.getNombresDeCuentasSinRepetir()
-				.stream().collect(Collectors.toList());
+		return this.cuentasController.getNombresDeCuentasSinRepetirAsList() ;
 	}
 	
-	public void setNombresDeCuentasSinRepetir(HashSet<String> myNombresDeCuentasSinRepetir) {
-		this.nombresDeCuentasSinRepetir = myNombresDeCuentasSinRepetir;
+	public void setNombresDeCuentasSinRepetir() {
+		this.cuentasController.getNombresDeCuentasSinRepetir() ;
 	}
 }
-

@@ -8,6 +8,7 @@ import java.util.stream.Stream;
 
 import model.Cuenta;
 import model.Empresa;
+import model.Indicador;
 
 public class CuentaController {
 	
@@ -17,19 +18,24 @@ public class CuentaController {
 	
 	public CuentaController(  ) {
 		DAOEmpresa dao = new DAOJsonEmpresa() ;
+		/***
+		 * TODO: tal vez no es lo más coherente que el constructor de
+		 * CuentaController setee todas las cuentas existentes sin repetir... pero alla tu...
+		 * 
+		 */
+		
 		repo = RepositorioDeEmpresas.getInstance(dao) ;
 		try {
-			this.setCuentasSinRepetir
+			
+			this.setNombresDeCuentasSinRepetir
 						( repo.getAllEmpresas () );
+			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-					//don't forget getIndicadores!!!
-					//getCuentas() -> devuelve cuentas
-					//--------------------------------
 	}
 	
-	public void setCuentasSinRepetir( List <Empresa> empresas )
+	public void setNombresDeCuentasSinRepetir( List <Empresa> empresas )
 	{
 		this.nombresDeCuentasSinRepetir = new HashSet<>(); 
 		Stream <Cuenta>cuentas = empresas.stream()
@@ -53,10 +59,6 @@ public class CuentaController {
 	public List<String> getNombresDeCuentasSinRepetirAsList() {
 		return this.getNombresDeCuentasSinRepetir()
 				.stream().collect(Collectors.toList());
-	}
-	
-	public void setNombresDeCuentasSinRepetir(HashSet<String> nombresDeCuentasSinRepetir) {
-		this.nombresDeCuentasSinRepetir = nombresDeCuentasSinRepetir;
 	}
 	
 }

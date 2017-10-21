@@ -38,7 +38,7 @@ public class DAOJsonIndicador implements DAOIndicador {
 		try {
 			indicadores = this.getAllIndicadores( myUsuario );
 			List<String> nombresDeIndicadores = new ArrayList<>() ;
-			indicadores.forEach(e -> nombresDeIndicadores.add(e.getNombre()));
+			indicadores.forEach(e -> nombresDeIndicadores.add(e.getNombreDeIndicador()));
 			int index = nombresDeIndicadores.indexOf(nombreEmpresa) ;
 			return index ;
 		} catch (IOException e1) {

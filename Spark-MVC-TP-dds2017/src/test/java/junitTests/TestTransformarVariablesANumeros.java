@@ -37,21 +37,12 @@ public class TestTransformarVariablesANumeros
 	        if ( !recognizingVar )  {
 	          recognizingVar = true ;
 	        }
-	        //Encontró la variable que se halla más a la izquierda de la expresión,
-	        //la cual era la unica que quedaba
 	        if (i == 0)
 	        {
-	          //encontró una variable que fue leída de derecha a izq
+	        	
 	          variableName = new StringBuilder(resultado).reverse().toString();
 	          
-	          //expresionFinal tiene la concatenaci�n parcial de haber
-	          //reemplazado los nombres de variables por Doubles
 	          String strAux = expresionFinal ;
-	          //TODO: poner bloques try catch para manejar una variable sintacticamente incorrecta
-	          //si estaba reconociendo una variable y encontr� otra cosa
-	          
-	          //la expresión final es con el reemplazo de todas las variables a un double
-	          //strAux
 	          if ( cuentasHandler.existeLaCuenta(variableName) )
 	          {
 	        	  expresionFinal = String.valueOf(0) + strAux;
@@ -69,7 +60,7 @@ public class TestTransformarVariablesANumeros
 	        {
 	          variableName = new StringBuilder(resultado).reverse().toString();
 	          String strAux = expresionFinal;
-	          //si estaba reconociendo una variable y encontró otra cosa
+	          
 	          if ( cuentasHandler.existeLaCuenta(variableName) )
 	          {
 	        	  expresionFinal = expr.charAt(i) + String.valueOf(0) + strAux;

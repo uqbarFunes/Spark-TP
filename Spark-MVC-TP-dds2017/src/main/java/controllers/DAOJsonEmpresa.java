@@ -57,8 +57,6 @@ public class DAOJsonEmpresa implements DAOEmpresa {
 			e1.printStackTrace();
 		}
 		
-		
-		//TODO create delete
 	}
 	@Override
 	public ArrayList<Empresa> getAllEmpresas() throws IOException {
